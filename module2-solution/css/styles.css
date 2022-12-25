@@ -1,0 +1,100 @@
+html{
+	font-family: cursive;
+	font-weight: bold;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	margin: 0;
+}
+
+div{
+	display: flex;
+}
+
+.title{
+	margin: 1vh;
+	
+	font-size: 30pt;
+	font-weight: bold;
+	
+	
+}
+
+.cards{
+	width: 100%;
+	justify-content: center;
+	flex-direction: row;
+	}
+
+.card{
+	margin: 20px;
+	min-height: 150px;
+	
+	flex-direction: column;
+	text-align: center;
+	flex-grow: 1;
+	
+	background-color: grey;
+	border: solid;
+}
+
+.card-title{
+	font-size: 15pt;
+	    padding: 5px 25px;
+	
+	align-self: flex-end;
+	
+	border: solid;
+	    border-top: none;
+    border-right: none;
+}
+
+.card-text{
+	font-size: 10pt;
+	margin: 10px;
+}
+
+#chicken{
+	background-color: pink;
+}
+
+#beef{
+	background-color: darkred;
+	color: white;
+    border-color: black;
+}
+
+#sushi{
+	background-color: lightgoldenrodyellow;
+}
+
+@media screen and (min-width: 992px)
+{
+	.cards{
+	flex-direction: row;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+	.cards{
+	flex-direction: row;
+	flex-wrap: wrap;
+	}
+	
+	.card{
+		    width: 45%;
+	}
+}
+
+@media screen and (max-width: 767px)
+{
+	.cards{
+	flex-direction: column;
+	align-items: stretch;
+	}
+}
